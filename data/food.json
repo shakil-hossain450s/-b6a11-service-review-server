@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Best Chopped Salad",
+        "price": "12",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2019/05/Chopped-Salad-007-800x1000.jpg",
+        "description": "This chopped salad will amaze everyone around the table! Homemade Italian dressing, crisp veggies and Parmesan cheese combine into one extraordinary salad."
+    },
+    {
+        "name": "Corn Vada (Sweet Corn Vada)",
+        "price": "15",
+        "image": "https://www.jeyashriskitchen.com/wp-content/uploads/2022/05/IMG_5456.jpg",
+        "description": "Corn vada is a popular snack in the Andhra region. This is made similar to the Tamilnadu style masala vada. We soak dal and make masala vada but this is an instant one. We are using corn kernels the vada and adding rice flour and gram flour for binding. You can use fresh or frozen corn for making this Corn vada"
+    }
+    
+]
