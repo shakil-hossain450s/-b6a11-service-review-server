@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 const port = process.env.PORT || 5000;
 const app = express();
@@ -21,6 +21,7 @@ async function run() {
     try {
         const blogQuestionCollection = client.db('serviceReviewDB').collection('blogQuestion');
         const foodCollection = client.db('serviceReviewDB').collection('foodHome');
+        const reviewCollection = client.db('serviceReviewDB').collection('reviews');
 
         // blog question get operation
         app.get('/blog', async (req, res) => {
@@ -41,6 +42,20 @@ async function run() {
             const query = {};
             const cursor = foodCollection.find(query);
             const result = await cursor.toArray();
+            res.send(result); 
+        })
+
+        app.get("/services/:id", async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id) };
+            const getSingleProduct = await foodCollection.findOne(query);
+            res.send(getSingleProduct);
+        })
+
+        app.post("/userReview", async (req, res) => { 
+            const reviewData = req.body;
+            console.log(reviewData);
+            const result = await reviewCollection.insertOne(reviewData);
             res.send(result);
         })
     }
