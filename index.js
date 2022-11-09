@@ -19,11 +19,27 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 
 async function run() {
     try {
-        const serviceReviewCollection = client.db('serviceReviewDB').collection('blogQuestion')
+        const blogQuestionCollection = client.db('serviceReviewDB').collection('blogQuestion');
+        const foodCollection = client.db('serviceReviewDB').collection('foodHome');
 
+        // blog question get operation
         app.get('/blog', async (req, res) => {
             const query = {};
-            const cursor = serviceReviewCollection.find(query);
+            const cursor = blogQuestionCollection.find(query);
+            const result = await cursor.toArray();
+            res.send(result);
+        });
+
+        app.get("/food-home", async (req, res) => {
+            const query = {};
+            const cursor = foodCollection.find(query);
+            const result = await cursor.limit(3).toArray();
+            res.send(result);
+        });
+
+        app.get('/services', async (req, res) => {
+            const query = {};
+            const cursor = foodCollection.find(query);
             const result = await cursor.toArray();
             res.send(result);
         })

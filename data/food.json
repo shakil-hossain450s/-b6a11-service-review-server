@@ -1,15 +1,44 @@
 [
     {
-        "name": "Best Chopped Salad",
-        "price": "12",
-        "image": "https://www.acouplecooks.com/wp-content/uploads/2019/05/Chopped-Salad-007-800x1000.jpg",
-        "description": "This chopped salad will amaze everyone around the table! Homemade Italian dressing, crisp veggies and Parmesan cheese combine into one extraordinary salad."
+        "name": "Pumpkin Pudding Cookies",
+        "price": "16",
+        "rating": "5",
+        "image": "https://i.ibb.co/4j72455/1.jpg",
+        "description": "Pumpkin Pudding Cookies are soft, sweet and loaded with amazing spiced pumpkin flavor! These pumpkin white chocolate chip cookies are made with pudding mix for the best texture and taste. Making these pumpkin spice pudding cookies are perfect for when the weather begins to change and the Autumn season begins."
     },
     {
         "name": "Corn Vada (Sweet Corn Vada)",
         "price": "15",
-        "image": "https://www.jeyashriskitchen.com/wp-content/uploads/2022/05/IMG_5456.jpg",
+        "rating": "5",
+        "image": "https://i.ibb.co/vBMHGnK/2.jpg",
         "description": "Corn vada is a popular snack in the Andhra region. This is made similar to the Tamilnadu style masala vada. We soak dal and make masala vada but this is an instant one. We are using corn kernels the vada and adding rice flour and gram flour for binding. You can use fresh or frozen corn for making this Corn vada"
+    },
+    {
+        "name": "Smashed Potatoes",
+        "price": "8",
+        "rating": "5",
+        "image": "https://i.ibb.co/JQgL5hT/3.jpg",
+        "description": "Mashed potato or mashed potatoes (American and Canadian English), colloquially known as mash (British English), is a dish made by mashing boiled or steamed potatoes, usually with added milk, butter, salt and pepper. It is generally served as a side dish to meat or vegetables."
+    },
+    {
+        "name": "Air-Fryer Peanut Butter Cookies",
+        "price": "18",
+        "rating": "5",
+        "image": "https://i.ibb.co/K5Y9t44/4.jpg",
+        "description": "Air fryer peanut butter cookies are sweet, nutty, and so delicious! This small batch, easy cookie recipe is the fastest batch you'll ever make! Ready in 15 minutes or less. This was inspired by my oven baked peanut butter cookies."
+    },
+    {
+        "name": "Thai Drunken Noodles with Beef",
+        "price": "25",
+        "rating": "5",
+        "image": "https://i.ibb.co/1dk4ZsD/5.jpg",
+        "description": "Thai Beef Drunken Noodles combines rice noodles with thinly sliced flavored beef, thai basil, peppers, all dressed in delicious sauce with just the right amount of heat! A simple and easy weeknight meal that comes together in 20 minutes."
+    },
+    {
+        "name": "Thai Meatball Soup",
+        "price": "19",
+        "rating": "5",
+        "image": "https://i.ibb.co/rG2ZDBm/6.jpg",
+        "description": "This Thai inspired chicken meatball soup is flavor-packed and easy to make with a creamy coconut curry broth, shiitake mushrooms, and oven-baked meatballs. Served warm with rice noodles or fluffy jasmine rice for the perfect cozy meal in less than an hour."
     }
-    
 ]
