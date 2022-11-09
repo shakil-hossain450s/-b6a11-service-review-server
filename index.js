@@ -50,13 +50,12 @@ async function run() {
             const query = { _id: ObjectId(id) };
             const getSingleProduct = await foodCollection.findOne(query);
             res.send(getSingleProduct);
-        })
+        });
 
-        app.post("/userReview", async (req, res) => { 
-            const reviewData = req.body;
-            console.log(reviewData);
-            const result = await reviewCollection.insertOne(reviewData);
-            res.send(result);
+        app.post("/reviews", async (req, res) => { 
+            const reviews = req.body;
+            const result = await reviewCollection.insertOne(reviews);
+            res.send(result)
         })
     }
     finally {
