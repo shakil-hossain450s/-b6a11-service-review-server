@@ -52,11 +52,14 @@ async function run() {
             res.send(getSingleProduct);
         });
 
-        app.post("/reviews", async (req, res) => { 
+
+
+        app.post('/reviews', async (req, res) => { 
             const reviews = req.body;
             const result = await reviewCollection.insertOne(reviews);
-            res.send(result)
+            res.send(result);
         })
+
     }
     finally {
         
